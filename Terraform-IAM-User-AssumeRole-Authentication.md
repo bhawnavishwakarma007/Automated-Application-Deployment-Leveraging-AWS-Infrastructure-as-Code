@@ -29,10 +29,6 @@ Navigate to:
 
     tf-user
 
-Enable:
-
-    ✔ Programmatic access
-
 After creation:
 
     👉 Go to Security credentials  
