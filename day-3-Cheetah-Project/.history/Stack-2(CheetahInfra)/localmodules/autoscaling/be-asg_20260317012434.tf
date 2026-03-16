@@ -3,6 +3,6 @@ resource "aws_security_group" "be_asg_sg" {
   description = "Security group for BE ASG."
   vpc_id      = var.vpc_id
 }
-resource "aws_security_group_ingress_rule" "allow_be_ipv4_22" {
+resource "aws_security_group_in" "name" {
   
 }
