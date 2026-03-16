@@ -1,10 +1,10 @@
 provider "aws" {
   region = "us-east-1"
 
-  # assume_role {
-  #   role_arn = "arn:aws:iam::851725445607:role/tf-role"
-  #   session_name = "tf-app-session"
-  # }
+  assume_role {
+    role_arn = "arn:aws:iam::851725445607:role/tf-role"
+    session_name = "tf-app-session"
+  }
   
 }
 
