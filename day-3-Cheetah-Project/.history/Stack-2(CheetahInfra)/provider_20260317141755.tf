@@ -9,7 +9,7 @@ provider "aws" {
 }
 
 terraform {
-  required_version = "1.14.7"
+  required_version = "1.14."
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -18,7 +18,7 @@ terraform {
   }
   backend "s3" {
     bucket       = "dev-cara-app-s3-bucket"
-    key          = "envs/dev/app/terraform.tfstate"
+    key          = "envs/dev/infra/terraform.tfstate"
     region       = "us-east-1"
     encrypt      = true
     use_lockfile = true
