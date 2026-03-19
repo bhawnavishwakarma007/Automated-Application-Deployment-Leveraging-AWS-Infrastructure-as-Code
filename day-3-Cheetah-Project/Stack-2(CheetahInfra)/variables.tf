@@ -41,3 +41,54 @@ variable "rds_db_parameter_name" {
   type        = string
   description = "RDS Parameter name for password."
 }
+
+variable "instance_type" {
+  type        = string
+  description = "Instance type"
+}
+
+variable "jar_file_name" {
+  type        = string
+  description = "Jar file name"
+}
+
+variable "desired_capacity" {
+  type        = number
+  description = "Desired capacity"
+}
+
+variable "max_size" {
+  type        = number
+  description = "Max capacity"
+}
+
+variable "min_size" {
+  type        = number
+  description = "Min capacity"
+}
+
+variable "slack_web_hook_url" {
+  type        = string
+  description = "Slack webhook url."
+}
+
+variable "fe_instance_type" {
+  type = string
+  description = "FE instance type"
+}
+
+variable "origin_id" {
+  type    = string
+}
+
+variable "default_behavior_allowed_methods" {
+  type    = list(string)
+}
+
+variable "default_behavior_cached_methods" {
+  type    = list(string)
+}
+
+variable "default_behavior_forwarded_values_header" {
+  type    = list(string)
+}
